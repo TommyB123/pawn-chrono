@@ -158,6 +158,8 @@ stock Timestamp:operator-(Timestamp:t, Days:d) {
 // -
 
 stock DurationFormat(Seconds:duration, output[], len = sizeof output) {
+	output[0] = 0;	
+
 	new
 		Seconds:years,
 		Seconds:days,
